@@ -1,33 +1,29 @@
-<!-- Folder structure we'll simulate:
-/
-├── index.html
-├── about.html
-├── services.html
-├── resources.html
-├── contact.html
-├── /assets
-│   └── (images, PDFs, etc.)
-├── /data
-│   ├── stretches.json
-│   └── herbs.json
--->
-
-<!-- We'll use Tailwind via CDN to keep things simple -->
-<!-- Example: index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leona & Lindon TCM Clinic</title>
+  <title>Treat Together</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/treat-together-logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/treat-together-logo.png" />
+  <meta property="og:image" content="assets/treat-together-logo.png" />
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-900">
   <header class="bg-white shadow p-4">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Leona & Lindon Clinic</h1>
+      <div class="flex items-center">
+        <!-- This is the visible logo -->
+        <img src="assets/treat-together-logo.png" alt="Treat Together Logo" class="h-10 mr-3">
+        <h1 class="text-xl font-bold">Treat Together</h1>
+      </div>
       <nav>
-        <a href="index.html" class="mr-4">Home</a>
+        <a href="index.html" class="mr-4 font-semibold">Home</a>
         <a href="services.html" class="mr-4">Services</a>
         <a href="resources.html" class="mr-4">Resources</a>
         <a href="about.html" class="mr-4">About</a>
@@ -37,12 +33,15 @@
   </header>
 
   <main class="container mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-4">Welcome to Our Practice</h2>
-    <p class="mb-4">We offer holistic Traditional Chinese Medicine services including acupuncture and customized herbal remedies.</p>
+    <h2 class="text-2xl font-semibold mb-4">Welcome to Treat Together</h2>
+    <p class="mb-4">
+      We provide holistic care through Traditional Chinese Medicine and Registered Massage Therapy — including acupuncture,
+      herbal medicine, joint mobilization, and therapeutic bodywork — all tailored to your individual needs.
+    </p>
   </main>
 
   <footer class="bg-gray-100 p-4 mt-10 text-center text-sm">
-    &copy; 2025 Leona & Lindon Clinic. All rights reserved.
+    &copy; 2025 Treat Together. All rights reserved.
   </footer>
 </body>
 </html>
